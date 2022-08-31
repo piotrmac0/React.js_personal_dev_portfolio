@@ -38,11 +38,11 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">Nasze<br/><span> Portoflio</span></h2>
-      <h4 className="p-text">Zobacz szczegóły na <a href="https://www.behance.net/piotrmac1" target="_blank" rel="noreferrer">Behance</a></h4>
+      <h2 className="head-text">My<br/><span>Portoflio</span></h2>
+      <h4 className="p-text">See more details on <a href="https://www.behance.net/piotrmac1" target="_blank" rel="noreferrer">Behance</a></h4>
 
       <div className="app__work-filter">
-        {['Wszystkie', 'Strony www', 'Identyfikacja wizualna', 'Marketing'].map((item, index) => (
+        {['All', 'Websites', 'Blockchain&Web3', 'SEO&Performance'].map((item, index) => (
           <div
               key={index}
               onClick={() => handleWorkFilter(item)}
@@ -60,9 +60,7 @@ const Work = () => {
       >
                 {filterWork.map((work, index) => (
                   <div className="app__work-item app__flex" key={index}>
-                    <div
-                      className="app__work-img app__flex"
-                    >
+                    <div className="app__work-img app__flex">
                       <img src={urlFor(work.imgUrl)} alt={work.name} />
 
               <motion.div

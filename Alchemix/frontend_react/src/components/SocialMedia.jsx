@@ -1,25 +1,31 @@
 import React from 'react'
-import {  BsInstagram } from 'react-icons/bs';
-import { FaBehance, FaFacebook } from 'react-icons/fa';
+import {  BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
+import { FaBehance } from 'react-icons/fa';
 
 const SocialMedia = () => {
   return (
     <div className="app__social">
             <div>
-              <a href="https://www.instagram.com/alchemix_digital/" target="_blank" rel="noreferrer">
-                  <BsInstagram />
+              <a href="https://github.com/piotrmac0" target="_blank" rel="noreferrer">
+                  <BsGithub />
                 </a>
             </div>
 
             <div>
-                <a href="https://www.facebook.com/Alchemixdigital-110553738364187/" target="_blank" rel="noreferrer">
-                  <FaFacebook />
-                </a>
+              <a href="https://www.behance.net/piotrmac1" target="_blank" rel="noreferrer">
+                <FaBehance />
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.linkedin.com/in/piotrmac0/" target="_blank" rel="noreferrer">
+                <BsLinkedin />
+              </a>
             </div>
                        
             <div>
-              <a href="https://www.behance.net/piotrmac1" target="_blank" rel="noreferrer">
-                <FaBehance />
+              <a href="https://twitter.com/PiotrMac0" target="_blank" rel="noreferrer">
+                <BsTwitter />
               </a>
             </div>
     </div>

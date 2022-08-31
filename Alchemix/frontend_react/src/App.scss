@@ -1,6 +1,9 @@
 .app {
-    background-color: var(--primary-color);
+ 
     font-family: var(--font-base);
+
+  
+    
   }
   
   .app__whitebg {
@@ -12,11 +15,25 @@
   }
   
   .app__container {
-    width: 100%;
+    max-width: 100vw;
     min-height: 100vh;
   
     display: flex;
     flex-direction: row;
+
+  
+    background: url("assets/bgimage.png");
+    background-size: fill;
+    background-position: center;
+    background-repeat: repeat;
+
+    @media screen and (max-width: 915px) {
+      background: url("assets/mobilebg.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: repeat;
+    }
+
   }
   
   .app__flex {
@@ -44,6 +61,10 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+
+    @media screen and (max-width: 800px) {
+      display:none;
+    }
   
     p {
       text-transform: uppercase;
@@ -102,8 +123,8 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-  
     padding: 1rem;
+    margin-bottom:5rem;
   
     div {
       width: 40px;

@@ -28,7 +28,7 @@ const About = () => {
 
   return (
  <>
-          <h2 className="head-text">Uwielbiamy<span> rozwijać firmy</span> <br /> oraz<span> czynić ludzi szczęśliwymi</span></h2>
+          <h2 className="head-text"><span>My Services</span> and <span>specializations</span></h2>
           <div className="app__profiles">
               {abouts.map((about, index) => (
                 <motion.div
@@ -47,7 +47,7 @@ const About = () => {
           </div>
  
  </>
-)
+) 
 };
 
 export default AppWrap(

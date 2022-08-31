@@ -1,4 +1,40 @@
+import React from 'react'
+import './Footer.scss'
+import { FaFacebook } from 'react-icons/fa';
+import { BsTwitter, BsInstagram } from 'react-icons/bs';
 
+const Footer = () => {
+    return (
+        <footer>
+
+            <a href="#" className="footer__logo">PIORTMAC.DEV</a>
+
+            <ul className="permalinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#work">Portfolio</a></li>
+                <li><a href="#team">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div className="footer__socials">
+                <a href="https://twitter.com/piotrmac0" target="_blank" rel="noopener noreferrer"><BsTwitter /></a>
+                <a href="https://facebook.com/piotr.macx.5" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+                <a href="https://www.instagram.com/piotrmacx/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
+            </div>
+
+            <div className="footer__copyright">
+                <small>&copy; Piotr Mac. All rights reserved.</small>
+            </div>
+
+        </footer >
+    )
+}
+
+export default Footer
+
+/*
 import React, {useState} from 'react';
 import { useRef } from 'react';
 import { images } from '../../constants';
@@ -46,7 +82,7 @@ const Footer = () => {
 
     
   };
-*/}
+
 
 const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 const [loading, setLoading] = useState(false);
@@ -109,3 +145,4 @@ export default AppWrap(
   'footer',
   'app__whitebg',
 );
+*/

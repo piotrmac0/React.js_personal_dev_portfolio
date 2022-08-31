@@ -1,0 +1,377 @@
+.about__container {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap:10%;
+}
+
+
+#about {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    min-height:50vh;
+}
+
+.about_info {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    padding-bottom:4rem;
+}
+
+.about__me {
+    width:100%;
+    border-radius:2rem;
+    display:grid;
+    object-fit: cover;
+    place-items: center;
+    background: blue;
+}
+
+.teamTitle {
+    font-size:42px;
+    margin-top:0;
+    margin-bottom:3vh;
+    color: var(--secondary-color);
+
+    @media screen and (max-width: 1000px) {
+        font-size:32px;
+        margin-bottom:5vh;
+        margin-top:2vh;
+      }
+}
+
+.subtitle {
+    font-size:20px;
+
+}
+
+
+.about__cards {
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+
+}
+
+.about__card {
+    background: white;
+    border: 1px solid transparent;
+    border-radius:1rem;
+    width:90%;
+    padding: 20% 5% 20% 5%;
+    text-align:center;
+    box-shadow: -1px 3px 10px 0px rgba(236, 236, 236, 1);
+    transition: all 0.3s ease;
+    
+    @media screen and (max-width: 915px) {
+        border: 1px solid white;
+      }
+}
+
+.about__card:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.about__icon {
+    color: black;
+    font-size:1.8rem;
+    margin-bottom: 1rem;
+}
+.about__card h5 {
+    font-size: 1.1rem;
+}
+
+.about__card small {
+    color: black;
+}
+
+.about__content p {
+    margin: 2rem 2rem 2.6rem 0;
+    color: var(--color-light);
+}
+
+.cvbutton {
+    width: max-content;
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 0.55rem 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
+
+    a.cv-primary {
+        text-align:center;
+        justify-content: center;
+        align-self: center;
+        color:black;
+        text-decoration: none;
+    }
+}
+
+.cvbutton:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+    a.cv-primary {
+        text-align:center;
+        justify-content: center;
+        align-self: center;
+        color:white;
+        text-decoration: none;
+    }
+}
+
+
+
+
+.animation {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+/* ======= MEDIA QUERIES (SMALL DEVICES) ======= */
+
+@media screen and (max-width: 900px) {
+
+    .about__container {
+        display:grid;
+        grid-template-columns: 1fr;
+        
+       
+    }
+
+    div.about__cards {
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:2.5rem;
+        
+    
+    }
+    
+    .about__card {
+        background: white;
+        border: 1px solid transparent;
+        border-radius:1rem;
+        width:100%;
+        padding: 20% 5% 20% 5%;
+        text-align:center;
+        
+    }
+
+
+    #about {
+       /* margin-left: 3rem;
+        margin-right: 3rem;*/
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom:0;
+        margin-top:-3rem;
+        min-height:100vh;
+    }
+
+
+
+    .about__me {
+       background-color: transparent;
+       
+    }
+    
+   
+
+    .about__content {
+        margin-bottom:5vh;
+    }
+    
+
+    .about__container p {
+        margin: 2rem 0;
+    }
+
+    #about > h2 {
+        margin-bottom:5vh;
+    }
+
+}
+
+
+/* ======= MEDIA QUERIES (MEDIUM DEVICES) ======= */
+
+@media screen and (min-width: 1200px) {
+    .about__container {
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        gap:10%;
+    }
+
+    .about__me {
+        width:100%;
+        max-height: 45vh;
+        border-radius:2rem;
+        display:grid;
+        object-fit: contain;
+        place-items: center;
+        background: linear-gradient(45deg, transparent, var(--color-primary, transparent));
+    }
+    
+    
+
+}
+
+
+/*
+
+.teamcontainer {
+    
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 5vh 8vw;
+    padding-bottom:0;
+}
+
+.teamTop {
+    display:flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
+}
+
+.leftC{
+   
+    width:40%;
+    z-index:1;
+
+    @media screen and (max-width: 800px) {
+        width:100%;
+      }
+}
+
+.teamImg{
+    height:100%;
+    width:100%;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-left:-5rem;
+
+    @media screen and (max-width: 915px) {
+   
+        justify-content: center;
+        align-items: center;
+        margin-left:0;
+        display:none;
+      
+      }
+}
+
+.rightC{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    align-items: flex-start;
+    justify-content:flex-start;
+    
+    @media screen and (max-width: 800px) {
+        width:100%;
+       
+      
+      }
+}
+
+.bottomC {
+  
+    z-index:5;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top:5rem;
+
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
+   
+
+}
+
+.leftC .img {
+    width:250px;
+    @media screen and (max-width: 800px) {
+        width:100%;
+      }
+}
+
+.teamTitle {
+    font-size:42px;
+    margin-top:0;
+    margin-bottom:3vh;
+
+    @media screen and (max-width: 1000px) {
+        font-size:32px;
+        margin-bottom:5vh;
+        margin-top:2vh;
+      }
+}
+
+.subtitle {
+    font-size:20px;
+
+}
+
+.text {
+    margin-top:0;
+}
+
+
+.aboutInfo {
+
+    padding:16px 26px;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid gray;
+    
+
+    @media screen and (max-width: 1000px) {
+    
+        margin-bottom:5vh;
+  
+      }
+}
+
+*/
+
+
+
