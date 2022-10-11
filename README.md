@@ -1,4 +1,5 @@
 See live version here: https://piotrmac.dev 
+
 My personal developer portfolio website created in React.js with animations in Framer-motion and Sass, and what's the best - content management system in Sanity.io 
 This awesome frontend + backend combination allows me to dynamically render every content on this portfolio app in very fast and easy, even for non-technical user way.
 It's is in my opinion so powerful and awesome in-use full-management system.
